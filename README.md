@@ -1,6 +1,6 @@
 README
 
-必要なライブラリ
+必要なライブラリ:
 pip install pydub matplotlib numpy scipy
 
 google colabでの使用を想定しています。
@@ -26,7 +26,7 @@ google colabでの使用を想定しています。
 
 README
 
-Required Libraries
+Required Libraries:
 pip install pydub matplotlib numpy scipy
 
 Usage
