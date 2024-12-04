@@ -107,7 +107,7 @@ def display_spectra_table(a_n, b_n):
 # メイン処理
 def main():
     client = authenticate_google()
-    sheet_url = "https://docs.google.com/spreadsheets/d/1uEcRCssXHRrlGtGHAn0gDUHFk_oriq5BJ0Dy1sDs7DY/edit#gid=0"
+    sheet_url = "Enter the spreadsheet URL here"
 
     x, y = get_google_sheet_data(sheet_url, client)
 
