@@ -1,4 +1,4 @@
-README
+README for Fourier analysis and waveform editing of audio files
 
 必要なライブラリ:
 pip install pydub matplotlib numpy scipy
@@ -24,7 +24,7 @@ google colabでの使用を想定しています。
 最終的に処理された音声データをMP3ファイルとしてダウンロードすることができます。
 
 
-README
+README Fourier analysis and waveform editing of audio files
 
 Required Libraries:
 pip install pydub matplotlib numpy scipy
@@ -46,3 +46,10 @@ After processing, you can choose to reprocess the same file. You can fine-tune t
 
 4. Download
 Once the audio is processed to your satisfaction, you can download the final MP3 file.
+
+
+README for Fourier series expansion
+
+
+
+README for Fourier series expansion
