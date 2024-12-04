@@ -7,10 +7,10 @@ google colabでの使用を想定しています。
 
 使い方
 1. 音声ファイルのアップロード
-最初に、処理したい音声ファイル（MP3またはWAV）をアップロードします。アップロード後、どちらの形式で処理を行うかを選択します。
+最初に、処理したい音声ファイル（対応するファイル形式:入力はMP3またはWAV形式の音声ファイル。処理後の音声はMP3形式で保存されます。）をアップロードします。
 
-2. 音声データの処理
-処理後のオプションとして、以下の3つの処理を選択できます。
+3. 音声データの処理
+処理のオプションとして、以下の3つの処理を選択できます。
 
 オプション1: (指定)Hz以下20Hz以上の部分の振幅を(指定)倍にする
 オプション2: 振幅の上位何%までの周波数を残す
@@ -31,7 +31,7 @@ pip install pydub matplotlib numpy scipy
 
 Usage
 1. Upload an Audio File
-First, upload the audio file you want to process (MP3 or WAV). After uploading, choose the format (MP3 or WAV) for processing.
+First, upload the audio file you want to process (MP3 or WAV). Before uploading, choose the format (MP3 or WAV) for processing.
 
 2. Audio Data Processing
 After uploading the file, you can select from the following three processing options:
@@ -50,6 +50,43 @@ Once the audio is processed to your satisfaction, you can download the final MP3
 
 README for Fourier series expansion
 
+必要なライブラリ:
+pip install gspread matplotlib numpy scipy oauth2client
+
+使い方
+使用にはフーリエ級数展開についての基本的な知識を要求します。
+
+1. Google スプレッドシートからデータを取得
+最初に、処理したいGoogle スプレッドシートのURLを入力します。このシートからxとyのデータを取得します。
+
+2. 近似曲線の作成
+取得したデータを元に、指定した次数で近似曲線を作成します。次数はユーザーが入力します。
+
+3. 高速フーリエ変換とスペクトル解析
+近似曲線に基づいて、スペクトルを計算します。
+計算したスペクトルのa(n)とb(n)を表形式で表示します。
+a(n)とb(n)の振幅をそれぞれプロットして表示します。
+4. 結果の表示
+近似曲線とそのスペクトルをプロットで確認し、計算結果を表示します。
 
 
 README for Fourier series expansion
+
+Required Libraries:
+pip install gspread matplotlib numpy scipy oauth2client
+
+Usage
+Requires basic knowledge of Fourier series expansion.
+
+1. Retrieve Data from Google Sheets
+First, enter the URL of the Google Spreadsheet you want to process. Data from this sheet (x and y values) will be retrieved.
+
+2. Create Fitted Curve
+Using the data, a fitted curve will be created with a degree of approximation specified by the user. You can enter the degree of the polynomial.
+
+3. Fast Fourier Transform and Spectrum Analysis
+Based on the fitted curve, the spectrum will be calculated.
+The calculated a(n) and b(n) values will be displayed in a table format.
+The amplitudes of a(n) and b(n) will be plotted.
+4. Display Results
+The fitted curve and its spectrum will be displayed in plots, and the results will be shown.
