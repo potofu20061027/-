@@ -1,3 +1,5 @@
+README
+
 必要なライブラリ
 pip install pydub matplotlib numpy scipy
 
@@ -21,6 +23,8 @@ google colabでの使用を想定しています。
 4. ダウンロード
 最終的に処理された音声データをMP3ファイルとしてダウンロードすることができます。
 
+
+README
 
 Required Libraries
 pip install pydub matplotlib numpy scipy
